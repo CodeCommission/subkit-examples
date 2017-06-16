@@ -1,5 +1,7 @@
 {
-  "variables": "",
+  "variables": [],
+  "instances": 1,
+  "type": "npm",
   "name": "pqdhwfzx",
   "serviceUrl": "pqdhwfzx.cloud.dropstack.run"
 }
