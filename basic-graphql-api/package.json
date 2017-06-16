@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "version": "0.0.0",
+    "name": "basic-graphql-api",
+    "description": "Subkit basic GraphQL API example",
+    "engines": {
+      "node": "^6"
+    },
+    "dependencies": {
+      "subkit": "latest"
+    },
+    "scripts": {
+      "dev" : "subkit serve --port 8080 --mocked",
+      "start": "NODE_ENV=production subkit serve --port 80 --mocked --silent"
+    }
+  }
