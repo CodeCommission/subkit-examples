@@ -1,0 +1,31 @@
+# A todo item
+type Todo {
+  # UUID of Todo
+  id: ID!
+  # Revision of Todo
+  rev: String
+  # Todo text
+  text: String
+  # Is Todo complete
+  complete: Boolean
+}
+
+# Todo for mutation inputs
+input TodoInput {
+  id: ID
+  rev: String
+  text: String
+  complete: Boolean
+}
+
+type Query {
+  # Load all todos
+  todos(id: ID): [Todo]
+}
+
+type Mutation {
+  # Add or update a Todo
+  upsertTodo(input: TodoInput): Todo
+  # Remove a Todo
+  deleteTodo(input: TodoInput): Todo
+}

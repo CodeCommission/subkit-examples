@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "todo-app-api",
+  "description": "Todos GraphQL API",
+  "engines": {
+    "node": "^6"
+  },
+  "dependencies": {
+    "uuid": "^3.1.0",
+    "pouchdb": "^6.3.4",
+    "pouchdb-adapter-memory": "^6.3.4",
+    "subkit": "latest"
+  },
+  "scripts": {
+    "dev": "subkit serve --port 8080 --mocked",
+    "dev:stage": "subkit serve --port 8080",
+    "start": "NODE_ENV=production subkit serve --port 80 --silent",
+    "start:secure": "NODE_ENV=production subkit serve --port 80 --secret SuperSecret --silent"
+  }
+}

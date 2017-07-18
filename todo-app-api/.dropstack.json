@@ -1,0 +1,8 @@
+{
+  "variables": "",
+  "instances": 1,
+  "alias": "subkit-todos-api.cloud.dropstack.run",
+  "type": "npm",
+  "name": "rfmpehrz",
+  "serviceUrl": "rfmpehrz.cloud.dropstack.run"
+}

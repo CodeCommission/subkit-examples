@@ -1,6 +1,6 @@
-# Basic GraphQL API
+# Todos GraphQL - PouchDB example
 
-> [Live example](https://subkit-todos-api.cloud.dropstack.run/graphql)
+[Live example](https://subkit-todos-api.cloud.dropstack.run/graphql)
 
 ## How to use locally
 
