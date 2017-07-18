@@ -1,6 +1,6 @@
 # Basic GraphQL API
 
-> [Live example](https://subkit-todos-api.cloud.dropstack.run/graphql)
+> [Live example](https://pqdhwfzx.cloud.dropstack.run/graphql)
 
 ## How to use locally
 
