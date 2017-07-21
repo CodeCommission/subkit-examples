@@ -1,0 +1,8 @@
+{
+  "variables": "",
+  "instances": 1,
+  "alias": "subkit-subscriptions-api.cloud.dropstack.run",
+  "type": "npm",
+  "name": "equykvae",
+  "serviceUrl": "equykvae.cloud.dropstack.run"
+}
