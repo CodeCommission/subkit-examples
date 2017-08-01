@@ -1,7 +1,9 @@
 {
   "variables": "",
   "instances": 1,
+  "alias": "subkit-basic-graphql-api.cloud.dropstack.run",
   "type": "npm",
+  "excludes": [],
   "name": "pqdhwfzx",
   "serviceUrl": "pqdhwfzx.cloud.dropstack.run"
 }

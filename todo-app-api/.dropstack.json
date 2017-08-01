@@ -3,6 +3,7 @@
   "instances": 1,
   "alias": "subkit-todos-api.cloud.dropstack.run",
   "type": "npm",
+  "excludes": [],
   "name": "rfmpehrz",
   "serviceUrl": "rfmpehrz.cloud.dropstack.run"
 }

@@ -3,6 +3,7 @@
   "instances": 1,
   "alias": "subkit-subscriptions-api.cloud.dropstack.run",
   "type": "npm",
+  "excludes": [],
   "name": "equykvae",
   "serviceUrl": "equykvae.cloud.dropstack.run"
 }
