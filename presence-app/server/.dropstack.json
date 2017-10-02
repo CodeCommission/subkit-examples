@@ -1,7 +1,7 @@
 {
   "variables": "",
   "instances": 1,
-  "alias": "subkit-present-server.cloud.dropstack.run",
+  "alias": "subkit-presence-server.cloud.dropstack.run",
   "type": "npm",
   "excludes": [],
   "name": "yltswunf",

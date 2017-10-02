@@ -20,7 +20,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
-        GRAPHQL_URL: JSON.stringify('https://subkit-present-server.cloud.dropstack.run'),
+        GRAPHQL_URL: JSON.stringify('https://subkit-presence-server.cloud.dropstack.run'),
       },
     }),
     new HtmlWebpackPlugin({

@@ -1,7 +1,7 @@
 {
   "variables": "",
   "instances": 1,
-  "alias": "subkit-present-client.cloud.dropstack.run",
+  "alias": "subkit-presence-client.cloud.dropstack.run",
   "type": "spa",
   "excludes": [],
   "name": "vxibdajy",

@@ -1,4 +1,4 @@
-# GraphQL subscriptions over HTTP Server-Side-Events
+# GraphQL-Server Subscriptions over HTTP Server-Side-Events
 
 This is a simple show case of **User presence list** application using:
 
@@ -11,12 +11,12 @@ This is a simple show case of **User presence list** application using:
 * [Apollo GraphQL-Client](http://www.apollodata.com/)
 * [Material-UI lite](https://getmdl.io)
 
-## Server
-
-* [GraphQL Server implementation](server/README.md)
-* [Live example](https://subkit-present-server.cloud.dropstack.run/graphql)
-
 ## Client
 
 * [Client implementation](client/README.md)
-* [Live example](https://subkit-present-client.cloud.dropstack.run)
+* [Live example](https://subkit-presence-client.cloud.dropstack.run)
+
+## Server
+
+* [GraphQL Server implementation](server/README.md)
+* [Live example](https://subkit-presence-server.cloud.dropstack.run/graphql)
