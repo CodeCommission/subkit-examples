@@ -7,7 +7,7 @@
 
 ## Live
 
-* [Basic GraphQL API](https://pqdhwfzx.cloud.dropstack.run/graphql)
+* [Basic GraphQL API](https://subkit-basic-graphql-api.cloud.dropstack.run/graphql)
 * [GraphQL API + PouchDB](https://subkit-todos-api.cloud.dropstack.run/graphql)
 * [GraphQL subscriptions API + PouchDB example](https://subkit-subscriptions-api.cloud.dropstack.run/graphql)
 * [Presence App](https://subkit-presence-client.cloud.dropstack.run)
