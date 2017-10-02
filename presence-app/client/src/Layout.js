@@ -8,7 +8,7 @@ const Layout = props => (
         <span className="mdl-layout-title">GraphQL SSE subscriptions - A user presence list</span>
         <div className="mdl-layout-spacer"></div>
         <nav className="mdl-navigation mdl-layout--large-screen-only">
-          <a className="mdl-navigation__link" href="https://github.com/MikeBild/graphql-subscriptions-sse-presence-list" target="_blank">GitHub</a>
+          <a className="mdl-navigation__link" href="https://github.com/CodeCommission/subkit-examples/tree/master/presence-app" target="_blank">GitHub</a>
         </nav>
       </div>
     </header>
