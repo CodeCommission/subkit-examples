@@ -1,0 +1,36 @@
+type Profile {
+  id: ID
+  profileUrl: String
+}
+
+type Item {
+  id: ID
+  email: String
+  # Gravatar picture
+  picture: Picture
+  profile: Profile
+}
+
+# Gravatar picture
+type Picture {
+  link: String
+}
+
+type  Query {
+  item(id: ID!): Item
+  items: [Item]
+}
+
+input ItemInput {
+  id: ID!
+  email: String
+}
+
+type Mutation {
+  upsertItem(input: ItemInput!): Item
+  removeItem(id: ID!): Boolean
+}
+
+type Subscription {
+  onItemUpserted: Item
+}

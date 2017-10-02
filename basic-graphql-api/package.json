@@ -2,15 +2,20 @@
     "private": true,
     "version": "0.0.0",
     "name": "basic-graphql-api",
-    "description": "Basic GraphQL API example",
+    "description": "SubKit basic GraphQL-Server example",
     "engines": {
       "node": "^6"
     },
     "dependencies": {
       "subkit": "latest"
     },
+    "devDependencies": {
+      "mocha": "^3.5.3",
+      "nodemon": "^1.12.1"
+    },
     "scripts": {
-      "dev" : "subkit serve --port 8080 --mocked",
-      "start": "NODE_ENV=production subkit serve --port 80 --mocked --silent"
+      "dev" : "nodemon --ext gql,js --exec subkit serve --port 8080 --graphiql",
+      "start": "NODE_ENV=production subkit serve --port 80 --graphiql",
+      "test": "mocha --require babel-polyfill --compilers js:babel-register"
     }
   }
