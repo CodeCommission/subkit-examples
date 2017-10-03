@@ -1,0 +1,18 @@
+type Item {
+  id: ID
+  email: String
+  profile: Profile
+}
+
+type Profile {
+  displayName: String
+  description: String
+  thumbnailUrl: String
+  aboutMe: String
+  currentLocation: String
+}
+
+type  Query {
+  item: Item
+  items: [Item]
+}

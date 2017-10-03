@@ -1,0 +1,9 @@
+{
+  "variables": "",
+  "instances": 1,
+  "alias": "subkit-directives.cloud.dropstack.run",
+  "type": "npm",
+  "excludes": [],
+  "name": "ziosccgx",
+  "serviceUrl": "ziosccgx.cloud.dropstack.run"
+}

@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "name": "directives-api",
+  "description": "SubKit GraphQL directives API example.",
+  "engines": {
+    "node": "^6"
+  },
+  "dependencies": {
+    "es6-template-strings": "^2.0.1",
+    "subkit": "latest"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "dev": "nodemon --ext gql,js --exec subkit serve --port 8080 --graphiql",
+    "dev:mocked": "nodemon --ext gql,js --exec subkit serve --port 8080 --mocked --graphiql",
+    "start": "NODE_ENV=production subkit serve --port 80 --graphiql",
+    "test": "mocha --require babel-polyfill --compilers js:babel-register"
+  }
+}
