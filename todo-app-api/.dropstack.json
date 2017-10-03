@@ -1,7 +1,7 @@
 {
   "variables": "",
   "instances": 1,
-  "alias": "subkit-todos-api.cloud.dropstack.run",
+  "alias": "subkit-todos.cloud.dropstack.run",
   "type": "npm",
   "excludes": [],
   "name": "rfmpehrz",
