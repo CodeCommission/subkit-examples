@@ -1,12 +1,9 @@
-const crypto = require('crypto');
-const {GraphQLString, GraphQLBoolean, GraphQLNonNull} = require('graphql')
-const {DirectiveLocation} = require('graphql/type/directives')
-const format = require('es6-template-strings')
+const crypto = require('crypto')
 
 export const resolvers = {
   Item: {
     picture: (parent, args, context, info) => {
-      const pictureHash = crypto.createHash('md5').update(parent.email).digest('hex');
+      const pictureHash = crypto.createHash('md5').update(parent.email).digest('hex')
       return ({
         link: `https://www.gravatar.com/avatar/${pictureHash}`,
       })
@@ -42,15 +39,4 @@ export const channels = {
 }
 
 export const directives = {
-  toUpperCase: {
-    description: 'Transform result to uppercase.',
-    locations: [DirectiveLocation.FIELD],
-    resolve: (resolve, parent, args, ctx, info) => resolve().then(result => result.toUpperCase()),
-  },
-  toFormatString: {
-    description: 'Transform result to ES6 template string.',
-    locations: [DirectiveLocation.FIELD],
-    args: {template: {type: new GraphQLNonNull(GraphQLString)}, parent: {type: GraphQLBoolean}},
-    resolve: (resolve, parent, args, ctx, info) => resolve().then(result => format(args.template, args.parent ? parent : {[`${info.fieldName}`]: result})),
-  },
 }

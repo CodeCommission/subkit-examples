@@ -1,7 +1,7 @@
 {
     "private": true,
     "version": "1.0.0",
-    "name": "basic-graphql-api",
+    "name": "basic-api",
     "description": "SubKit GraphQL-Server basic example",
     "engines": {
       "node": "^6"
