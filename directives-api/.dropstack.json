@@ -4,6 +4,8 @@
   "alias": "subkit-directives.cloud.dropstack.run",
   "type": "npm",
   "excludes": [],
+  "version": null,
+  "support-stateful": false,
   "name": "ziosccgx",
   "serviceUrl": "ziosccgx.cloud.dropstack.run"
 }
