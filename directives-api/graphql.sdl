@@ -1,7 +1,7 @@
 type Item {
   id: ID
   email: String
-  profile: Profile
+  profile: Profile @fetchJSON(url: "https://de.gravatar.com/${id}.json", jsonQuery: "entry[0]", timeout: 1000)
 }
 
 type Profile {
