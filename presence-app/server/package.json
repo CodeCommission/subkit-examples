@@ -16,8 +16,12 @@
     "nodemon": "^1.12.1"
   },
   "scripts": {
-    "dev": "nodemon --ext gql,js --exec subkit serve --port 8080 --graphiql",
-    "start": "NODE_ENV=production subkit serve --port 80 --graphiql",
-    "test": "mocha --require babel-polyfill --compilers js:babel-register"
+    "dev":
+      "nodemon --ext gql,sdl,sdle,js --exec subkit serve --port 8080 --graphiql  --analysis 1000 --extentions",
+    "dev:mocked":
+      "nodemon --ext gql,sdl,sdle,js --exec subkit serve --port 8080 --mocked --graphiql --analysis 1000 --extentions",
+    "start":
+      "NODE_ENV=production subkit serve --port 80 --graphiql  --analysis 1000 --extentions",
+    "test": "mocha --require babel-polyfill --require babel-register"
   }
 }
