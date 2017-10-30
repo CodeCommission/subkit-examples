@@ -7,7 +7,7 @@ type Todo {
   # Todo text
   text: String
   # Is Todo complete
-  complete: Boolean
+  isCompleted: Boolean
 }
 
 # Todo for mutation inputs
@@ -15,7 +15,7 @@ input TodoInput {
   id: ID
   rev: String
   text: String
-  complete: Boolean
+  isCompleted: Boolean
 }
 
 type Query {
