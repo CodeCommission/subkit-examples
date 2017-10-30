@@ -16,39 +16,39 @@ npm run dev
 ## Make GraphQL API Queries
 
 ```graphql
-query load_all_todos {
+query loadAllTodos {
   todos {
     id
     rev
     text
-    complete
+    isCompleted
   }
 }
 
-mutation add_todo {
+mutation addTodo {
   upsertTodo(input: {text: "hello world!"}) {
     id
     rev
     text
-    complete
+    isCompleted
   }
 }
 
-mutation remove_todo {
+mutation removeTodo {
   deleteTodo(input: {id: "", rev: ""}) {
     id
     rev
     text
-    complete
+    isCompleted
   }
 }
 
-subscription on_changed_todo {
-  onChangedTodo {
+subscription onTodoChanged {
+  onTodoChanged {
     id
     rev
     text
-    complete
+    isCompleted
   }
 }
 ```

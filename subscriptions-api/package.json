@@ -1,21 +1,28 @@
 {
-    "private": true,
-    "version": "1.0.0",
-    "name": "subscriptions-api",
-    "description": "GraphQL subscriptions API",
-    "engines": {
-      "node": "^6"
-    },
-    "dependencies": {
-      "subkit": "latest",
-      "uuid": "^3.1.0",
-      "pouchdb": "^6.3.4",
-      "pouchdb-adapter-memory": "^6.3.4"
-    },
-    "scripts": {
-      "dev": "subkit serve --port 8080 --graphiql",
-      "dev:mocked": "subkit serve --port 8080 --mocked --graphiql",
-      "start": "NODE_ENV=production subkit serve --port 80 --graphiql",
-      "start:secure": "NODE_ENV=production subkit serve --port 80 --secret SuperSecret"
-    }
+  "private": true,
+  "version": "1.0.0",
+  "name": "subscriptions-api",
+  "description": "GraphQL subscriptions API",
+  "engines": {
+    "node": "^6"
+  },
+  "dependencies": {
+    "subkit": "latest",
+    "uuid": "^3.1.0",
+    "pouchdb": "^6.3.4",
+    "pouchdb-adapter-memory": "^6.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "dev":
+      "nodemon --ext gql,sdl,sdle,js --exec subkit serve --port 8080 --graphiql  --analysis 1000 --extentions",
+    "dev:mocked":
+      "nodemon --ext gql,sdl,sdle,js --exec subkit serve --port 8080 --mocked --graphiql --analysis 1000 --extentions",
+    "start":
+      "NODE_ENV=production subkit serve --port 80 --graphiql  --analysis 1000 --extentions",
+    "test": "mocha --require babel-polyfill --require babel-register"
   }
+}
