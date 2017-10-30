@@ -1,8 +1,8 @@
 {
   "private": true,
   "version": "1.0.0",
-  "name": "present-graphql-server",
-  "description": "Present GraphQL API",
+  "name": "presence-graphql-server",
+  "description": "Presence GraphQL API",
   "engines": {
     "node": "^6"
   },
